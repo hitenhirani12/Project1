@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Form</title>
+  <!-- <audio controls autoplay hidden> <source src="audio/song3.mp3" type="audio/mpeg"></audio> -->
+  <style>
+    /* Body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8a1414;
+      margin: 0;
+      padding: 0;
+      background-image: url(photo4.jpg);
+    }
+
+    /* Header styling */
+    h1 {
+      color: #e3f1f1;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Form styling */
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    /* Label styling */
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    /* Input styling */
+    input[type="text"],
+    input[type="password"],
+    select,
+    textarea {
+      width: calc(100% - 22px);
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: rgb(25, 18, 18);
+    }
+
+    /* Radio and checkbox styling */
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+
+    /* Textarea styling */
+    textarea {
+      height: 100px;
+    }
+
+    /* Submit button styling */
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button[type="submit"] {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #34d3d3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #1e9d9d;
+    }
+
+    /* Marquee styling */
+    marquee {
+      color: #e3f1f1;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <form action="index2.html" method="post">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" name="username" placeholder="Enter your username" autofocus id="uname">
+    </div>
+    <div>
+      <label for="category">Category:</label>
+      <select name="category">
+        <option value="Love">Love</option>
+        <option value="Punjabi">Punjabi</option>
+        <option value="English">English</option>
+        <option value="Sad">Sad</option>
+      </select>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Enter your login password">
+    </div>
+    <div>
+      <label for="comments">Add valuable comments:</label>
+      <textarea name="comments" id="comments" rows="4" placeholder="Comments"></textarea>
+    </div>
+    <h2>
+      <button type="submit">Login</button>
+      <script src="app.js"></script>
+    </h2>
+  </form>
+</body>
+  
+</html>
